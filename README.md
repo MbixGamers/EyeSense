@@ -112,6 +112,8 @@ rm -rf <YOUR_PROJECT_PATH>/sketch
 
 If you unplug your USB to TTL adapter or change ports, follow these structural alignment procedures to correct the device mapping:
 
+📌 **Note on USB Addresses:** Depending on how many peripherals are connected, the assigned kernel path dynamically shifts. Common values include `ttyUSB0`, `ttyUSB1`, `ttyUSB2`, or `ttyUSB3`. Replace the placeholder configurations below with whichever device name surfaces in Step 1.
+
 ### Step 1: Detect the New Kernel TTY Assignment
 ```bash
 sudo dmesg -w
