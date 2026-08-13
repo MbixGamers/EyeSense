@@ -12,8 +12,6 @@ By combining edge-based AI vision, ultrasonic proximity sensing, Bluetooth commu
   <img src="Assets/Product%20Image.png" width="300" alt="EyeSense Prototype">
 </p>
 
-
-
 ---
 
 ## 🚀 Key Features
@@ -43,11 +41,9 @@ The system utilizes an integrated star-bus topology managed by a central hub.
 
 ### 🔌 Circuit Interconnections
 
-
 <p align="center">
   <img src="Schematics/Circuit%20Diagram.png" width="550" alt="EyeSense Circuit Diagram">
 </p>
-
 
 ---
 
@@ -89,7 +85,7 @@ default_profile: default
 ### 1. Start the App
 Navigate to your application folder and initiate the environment using the CLI execution command:
 ```bash
-cd /home/arduino/ArduinoApps/detect-objects-on-camera
+cd <YOUR_PROJECT_PATH>
 arduino-app-cli app start "."
 ```
 
@@ -107,7 +103,7 @@ arduino-app-cli app stop "."
 
 💡 **No Sketch Option (Python Only):** If you only want the camera's Python container running on the Linux processor without deploying custom C++ microcontroller code, delete the sketch directory entirely. The CLI will skip MCU compilation:
 ```bash
-rm -rf /home/arduino/ArduinoApps/detect-objects-on-camera/sketch
+rm -rf <YOUR_PROJECT_PATH>/sketch
 ```
 
 ---
@@ -126,14 +122,14 @@ sudo dmesg -w
 
 1. **Modify the Primary Python Script Engine:**
    ```bash
-   nano /home/arduino/ArduinoApps/detect-objects-on-camera/python/main.py
+   nano <YOUR_PROJECT_PATH>/python/main.py
    ```
    * modification: Update line 15 to reflect the new assignment: `serial_port = '/dev/ttyUSB1'`
    * Save & Exit: `Ctrl + O` ➡️ `Enter` ➡️ `Ctrl + X`
 
 2. **Modify the App Environment Blueprint:**
    ```bash
-   nano /home/arduino/ArduinoApps/detect-objects-on-camera/app.yaml
+   nano <YOUR_PROJECT_PATH>/app.yaml
    ```
    * modification: Update the terminal device mapping field at the footer array:
      ```yaml
@@ -144,7 +140,7 @@ sudo dmesg -w
 ### Step 3: Clear Orchestrator Cache and Force Environment Rebuild
 ```bash
 # Target project root
-cd /home/arduino/ArduinoApps/detect-objects-on-camera
+cd <YOUR_PROJECT_PATH>
 
 # Purge cached hardware rules
 rm -rf .cache
