@@ -8,10 +8,10 @@ By combining edge-based AI vision, ultrasonic proximity sensing, Bluetooth commu
 
 ## 📸 Product Preview
 
-<!-- Replace the placeholder path below with your actual image file path in the repository -->
-## 📸 Product Preview
+<p align="center">
+  <img src="Assets/Product%20Image.png" width="300" alt="EyeSense Prototype">
+</p>
 
-<img src="Assets/Product%20Image.png" width="350" alt="EyeSense Prototype">
 
 
 ---
