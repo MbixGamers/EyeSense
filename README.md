@@ -42,8 +42,12 @@ The system utilizes an integrated star-bus topology managed by a central hub.
 | **45W USB-C PD Power Supply** | 1 | Centralized system power distributor. |
 
 ### 🔌 Circuit Interconnections
-<!-- Place your circuit schematic diagram file path here -->
-![Circuit Schematic](Schematics/circuit_diagram.png)
+
+
+<p align="center">
+  <img src="Schematics/Circuit%20Diagram.png" width="550" alt="EyeSense Circuit Diagram">
+</p>
+
 
 ---
 
